@@ -12,22 +12,23 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+
 /**
- * Description of AccueilController
+ * Description of VoyagesController
  *
  * @author jeremy
  */
 
 
-class AccueilController extends AbstractController {
+class VoyagesController extends AbstractController {
 
     /**
-     * @Route("/", name="accueil")
+     * @Route("/voyages", name="voyages")
      * @return Response
      */
     
     public function index(): Response{
-        return $this->render("pages/accueil.html.twig");
+        return $this->render("pages/voyages.html.twig");
     }
     //put your code here
 }
